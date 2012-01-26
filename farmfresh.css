@@ -1,0 +1,82 @@
+/**
+ * Farm Fresh CSS
+ *
+ *		A simple CSS library for adding the FatCow Farm-Fresh Web Icons
+ *		to any website.
+ *
+ * @author		David "oodavid" King
+ * @url			github.com/oodavid/FarmFreshCSS
+ * @credits		fatcow.com/free-icons
+ */
+
+/* Both icon sizes are inline with non-repeating backgrounds */
+	.icon32,
+	.icon16	{background-repeat: no-repeat; display:-moz-inline-stack; display:inline-block; zoom:1; *display:inline;}
+
+/* 16x16 icons act like inline-labels */
+	.icon16	{min-height: 16px; line-height: 16px; padding: 5px 0 5px 20px; background-position: 0 center;}
+
+/* 32x32 icons act like images*/
+	.icon32 {position: relative; width: 32px; height: 32px; padding: 5px; background-position: center center; background-color: #B6B6B6; -webkit-border-radius: 5px; -khtml-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+	/* They can have notifications and emblems */
+		.icon32 .notification-l,
+		.icon32 .notification-r	{position: absolute; top: -5px; right: 0; padding: 2px; font-size: 12px; line-height: 10px; background-color: inherit; -webkit-border-radius: 5px; -khtml-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+		.icon32 .notification-l	{right: auto; left: 0;}
+		.icon32 .emblem-l,
+		.icon32 .emblem-r		{position: absolute; bottom: 1px; right: 1px; padding: 0; width: 16px; height: 16px; background-color: transparent; background-position: center center;}
+		.icon32 .emblem-l		{right: auto; left: 1px;}
+
+/* The icons */
+
+.icon16.icon_add {background-image: url('16x16/add.png');}
+.icon32.icon_add {background-image: url('32x32/add.png');}
+.icon16.icon_building {background-image: url('16x16/building.png');}
+.icon32.icon_building {background-image: url('32x32/building.png');}
+.icon16.icon_client_account_template {background-image: url('16x16/client_account_template.png');}
+.icon32.icon_client_account_template {background-image: url('32x32/client_account_template.png');}
+.icon16.icon_comments {background-image: url('16x16/comments.png');}
+.icon32.icon_comments {background-image: url('32x32/comments.png');}
+.icon16.icon_cross {background-image: url('16x16/cross.png');}
+.icon32.icon_cross {background-image: url('32x32/cross.png');}
+.icon16.icon_date {background-image: url('16x16/date.png');}
+.icon32.icon_date {background-image: url('32x32/date.png');}
+.icon16.icon_flask {background-image: url('16x16/flask.png');}
+.icon32.icon_flask {background-image: url('32x32/flask.png');}
+.icon16.icon_floorplan {background-image: url('16x16/floorplan.png');}
+.icon32.icon_floorplan {background-image: url('32x32/floorplan.png');}
+.icon16.icon_folder {background-image: url('16x16/folder.png');}
+.icon32.icon_folder {background-image: url('32x32/folder.png');}
+.icon16.icon_jar_open {background-image: url('16x16/jar_open.png');}
+.icon32.icon_jar_open {background-image: url('32x32/jar_open.png');}
+.icon16.icon_layer {background-image: url('16x16/layer.png');}
+.icon32.icon_layer {background-image: url('32x32/layer.png');}
+.icon16.icon_layers {background-image: url('16x16/layers.png');}
+.icon32.icon_layers {background-image: url('32x32/layers.png');}
+.icon16.icon_license_management {background-image: url('16x16/license_management.png');}
+.icon32.icon_license_management {background-image: url('32x32/license_management.png');}
+.icon16.icon_location {background-image: url('16x16/location.png');}
+.icon32.icon_location {background-image: url('32x32/location.png');}
+.icon16.icon_map {background-image: url('16x16/map.png');}
+.icon32.icon_map {background-image: url('32x32/map.png');}
+.icon16.icon_money {background-image: url('16x16/money.png');}
+.icon32.icon_money {background-image: url('32x32/money.png');}
+.icon16.icon_pencil {background-image: url('16x16/pencil.png');}
+.icon32.icon_pencil {background-image: url('32x32/pencil.png');}
+.icon16.icon_pictures {background-image: url('16x16/pictures.png');}
+.icon32.icon_pictures {background-image: url('32x32/pictures.png');}
+.icon16.icon_report {background-image: url('16x16/report.png');}
+.icon32.icon_report {background-image: url('32x32/report.png');}
+.icon16.icon_role {background-image: url('16x16/role.png');}
+.icon32.icon_role {background-image: url('32x32/role.png');}
+.icon16.icon_server_components {background-image: url('16x16/server_components.png');}
+.icon32.icon_server_components {background-image: url('32x32/server_components.png');}
+.icon16.icon_sheduled_task {background-image: url('16x16/sheduled_task.png');}
+.icon32.icon_sheduled_task {background-image: url('32x32/sheduled_task.png');}
+.icon16.icon_tag_blue {background-image: url('16x16/tag_blue.png');}
+.icon32.icon_tag_blue {background-image: url('32x32/tag_blue.png');}
+.icon16.icon_tick {background-image: url('16x16/tick.png');}
+.icon32.icon_tick {background-image: url('32x32/tick.png');}
+.icon16.icon_time {background-image: url('16x16/time.png');}
+.icon32.icon_time {background-image: url('32x32/time.png');}
+.icon16.icon_weather_clouds {background-image: url('16x16/weather_clouds.png');}
+.icon32.icon_weather_clouds {background-image: url('32x32/weather_clouds.png');}

@@ -1,0 +1,30 @@
+/**
+ * Farm Fresh CSS
+ *
+ *		A simple CSS library for adding the FatCow Farm-Fresh Web Icons
+ *		to any website.
+ *
+ * @author		David "oodavid" King
+ * @url			github.com/oodavid/FarmFreshCSS
+ * @credits		fatcow.com/free-icons
+ */
+
+/* Both icon sizes are inline with non-repeating backgrounds */
+	.icon32,
+	.icon16	{background-repeat: no-repeat; display:-moz-inline-stack; display:inline-block; zoom:1; *display:inline;}
+
+/* 16x16 icons act like inline-labels */
+	.icon16	{min-height: 16px; line-height: 16px; padding: 5px 0 5px 20px; background-position: 0 center;}
+
+/* 32x32 icons act like images*/
+	.icon32 {position: relative; width: 32px; height: 32px; padding: 5px; background-position: center center; background-color: #B6B6B6; -webkit-border-radius: 5px; -khtml-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+	/* They can have notifications and emblems */
+		.icon32 .notification-l,
+		.icon32 .notification-r	{position: absolute; top: -5px; right: 0; padding: 2px; font-size: 12px; line-height: 10px; background-color: inherit; -webkit-border-radius: 5px; -khtml-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+		.icon32 .notification-l	{right: auto; left: 0;}
+		.icon32 .emblem-l,
+		.icon32 .emblem-r		{position: absolute; bottom: 1px; right: 1px; padding: 0; width: 16px; height: 16px; background-color: transparent; background-position: center center;}
+		.icon32 .emblem-l		{right: auto; left: 1px;}
+
+/* The icons */
+

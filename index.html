@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Farm Fresh CSS</title>
+	<link rel="stylesheet" href="farmfresh.css" />
+	<style>
+		body {font: 13px/1.5 'Helvetica Neue',Arial,'Liberation Sans',FreeSans,sans-serif;}
+		.icon32			{background-color: #2599B6; color: #FFFFFF; cursor: pointer;}
+		.icon32:hover	{background-color: #017794;}
+		.icon16:hover	{background-color: #017794;}
+	</style>
+</head>
+<body>
+	<h1>Farm Fresh CSS</h1>
+	<p>Use the farmfresh icons as inline-icons</p>
+	<p>hello <spaan class="icon16 icon_add">inline icon</span></p>
+	<p><span class="icon16 icon_add">add something</span></p>
+	<p><span class="icon32 icon_cross"></span> delete something</p>
+	<p>
+		<span class="icon32 icon_floorplan">
+			<span class="notification-r">123</span>
+			<span class="emblem-l icon16 icon_cross"></span>
+		</span>
+		An icon button with notification an emblem
+	</p>
+	<h2>&quot;Build&quot; instructions</h2>
+	<p>I don't want there to be any chance of an executable file ending up on your server, so here's the command line:</p>
+	<pre>
+ls ./16x16/ > icons.txt
+sed -r "s/^([^\.]*)\.png$/.icon16.icon_\1 {background-image: url('16x16\/\1.png');}\n.icon32.icon_\1 {background-image: url('32x32\/\1.png');}/" icons.txt > icons.css
+cat stub.css icons.css > farmfresh.css
+rm icons.txt icons.css
+	</pre>
+	<h2>360kB CSS a bit big? Don't want all the icons?</h2>
+	<p>Pick your icons using grep like so</p>
+	<pre>
+ls ./16x16/ | grep -E "^(add|building|client_account_template|comments|cross|date|flask|floorplan|folder|jar_open|layer|layers|license_management|location|map|money|pencil|pictures|report|role|server_components|sheduled_task|tag_blue|tick|time|weather_clouds)\.png$" > icons.txt
+sed -r "s/^([^\.]*)\.png$/.icon16.icon_\1 {background-image: url('16x16\/\1.png');}\n.icon32.icon_\1 {background-image: url('32x32\/\1.png');}/" icons.txt > icons.css
+cat stub.css icons.css > farmfresh.css
+rm icons.txt icons.css
+	</pre>
+</body>
+</html>
